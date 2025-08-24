@@ -99,30 +99,6 @@ celery -A app.celery_app beat --loglevel=info
 
 ### Environment Variables
 
-Create a `.env` file in the root directory:
-
-```env
-# Database
-DATABASE_URL=postgresql://cargo_user:cargo_pass@localhost:5432/cargo_clash
-ASYNC_DATABASE_URL=postgresql+asyncpg://cargo_user:cargo_pass@localhost:5432/cargo_clash
-
-# Redis
-REDIS_URL=redis://localhost:6379/0
-CELERY_BROKER_URL=redis://localhost:6379/1
-CELERY_RESULT_BACKEND=redis://localhost:6379/2
-
-# AWS Configuration
-AWS_REGION=us-west-2
-AWS_ACCESS_KEY_ID=your_access_key
-AWS_SECRET_ACCESS_KEY=your_secret_key
-COGNITO_USER_POOL_ID=us-west-2_xxxxxxxxx
-COGNITO_CLIENT_ID=your_client_id
-SQS_QUEUE_URL=https://sqs.us-west-2.amazonaws.com/123456789012/cargo-clash-events
-
-# Security
-SECRET_KEY=your-super-secret-key-change-this-in-production
-```
-
 ### AWS Services Setup
 
 1. **AWS Cognito**: User authentication
@@ -237,7 +213,7 @@ npm test
 - **HTTPS/WSS**: Encrypted communications
 - **Database Security**: Parameterized queries, connection pooling
 
-## 📈 Monitoring
+## Monitoring
 
 ### Metrics Tracked
 - **Response Times**: API and WebSocket latency
