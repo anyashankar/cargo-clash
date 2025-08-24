@@ -63,8 +63,6 @@ Cargo Clash combines resource management, strategy, and fast-paced action in a p
    docker-compose up -d
    ```
 
-3. **Access the application
-
 ### Manual Setup
 
 #### Backend Setup
