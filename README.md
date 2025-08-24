@@ -137,7 +137,7 @@ SECRET_KEY=your-super-secret-key-change-this-in-production
 4. **Amazon S3**: File storage and backups
 5. **CloudWatch**: Monitoring and metrics
 
-## 🚢 Deployment
+## Deployment
 
 ### AWS EKS Deployment
 
@@ -178,7 +178,7 @@ SECRET_KEY=your-super-secret-key-change-this-in-production
    kubectl get services -n cargo-clash
    ```
 
-## 🧪 Testing
+## Testing
 
 ### Load Testing
 ```bash
@@ -286,8 +286,4 @@ npm test
 - **Application Logs**: `docker-compose logs backend`
 - **Database Logs**: `docker-compose logs postgres`
 - **Celery Logs**: `docker-compose logs celery-worker`
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
