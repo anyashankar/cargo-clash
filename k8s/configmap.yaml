@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cargo-clash-config
+  namespace: cargo-clash
+data:
+  # Database configuration
+  DATABASE_URL: "postgresql://cargo_user:cargo_pass@postgres-service:5432/cargo_clash"
+  ASYNC_DATABASE_URL: "postgresql+asyncpg://cargo_user:cargo_pass@postgres-service:5432/cargo_clash"
+  
+  # Redis configuration
+  REDIS_URL: "redis://redis-service:6379/0"
+  CELERY_BROKER_URL: "redis://redis-service:6379/1"
+  CELERY_RESULT_BACKEND: "redis://redis-service:6379/2"
+  
+  # Application configuration
+  DEBUG: "false"
+  LOG_LEVEL: "INFO"
+  CORS_ORIGINS: '["https://cargo-clash.example.com"]'
+  
+  # Game configuration
+  MAX_PLAYERS_PER_GAME: "100"
+  GAME_TICK_RATE: "10"
+  WORLD_SIZE: "1000"
+  
+  # AWS configuration
+  AWS_REGION: "us-west-2"
