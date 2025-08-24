@@ -1,6 +1,6 @@
-# Cargo Clash 🚛⚔️
+# Cargo Clash 
 
-## 🎮 Game Overview
+## Game Overview
 
 Cargo Clash combines resource management, strategy, and fast-paced action in a persistent online world. Players manage fleets of vehicles, complete missions, trade in dynamic markets, form alliances, and engage in combat while building their cargo transportation empire.
 
@@ -14,7 +14,7 @@ Cargo Clash combines resource management, strategy, and fast-paced action in a p
 - **World Events**: Dynamic events that affect gameplay and economy
 - **Real-time Updates**: Live game state via WebSocket connections
 
-## 🏗️ Technical Architecture
+##  Technical Architecture
 
 ### Backend Stack
 - **FastAPI**: High-performance Python web framework
@@ -38,7 +38,7 @@ Cargo Clash combines resource management, strategy, and fast-paced action in a p
 - **Auto Scaling**: Dynamic resource allocation
 - **Monitoring**: CloudWatch metrics and logging
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Docker and Docker Compose
