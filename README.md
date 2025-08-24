@@ -63,11 +63,7 @@ Cargo Clash combines resource management, strategy, and fast-paced action in a p
    docker-compose up -d
    ```
 
-3. **Access the application**
-   - Frontend: http://localhost:3000
-   - Backend API: http://localhost:8000
-   - API Documentation: http://localhost:8000/docs
-   - Celery Flower: http://localhost:5555
+3. **Access the application
 
 ### Manual Setup
 
